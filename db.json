@@ -1,5 +1,62 @@
 {
   "posts": [{ "id": 1, "title": "json-server", "author": "typicode" }],
-  "comments": [{ "id": 1, "body": "some comment", "postId": 1 }],
-  "profile": { "name": "typicode" }
+
+  "classes": [
+    {
+      "id": 1,
+      "date": "1/01/2022",
+      "content": "La maestra no se presento y los chavos de servicio nos dejaron actividades, como los 40 ejercicios y el primer reto de programacion"
+    },
+    {
+      "id": 2,
+      "date": "2/02/2022",
+      "content": "Nuevamente la profesora falto y los chicos de servicio nos dieron un poco de repaso para lograr el reto de programacion"
+    },
+    {
+      "id": 3,
+      "date": "4/02/2022",
+      "content": "la profesora se presento y nos pregunto acerca de algunos elemento de automatas como el lenaguaje que acpta y nos ´resento una presentacion que ella usa en teoria de la computacion y donde obtener material de apoyo de clase"
+    },
+    {
+      "id": 4,
+      "date": "09/02/2022",
+      "content": "Continuamos viendo la prsentacion de la profesora, nos dio un repaso de los automatas, como su definicion formal y en lenguaje que acepta tambien nos dio un repaso del uso de jflap y varios ejemplos de automatas"
+    },
+    {
+      "id": 5,
+      "date": "11/02/2022",
+      "content": "Emepzamos viendo las presentaciones de los compañeros de clase"
+    },
+    {
+      "id": 6,
+      "date": "14/02/2022",
+      "content": "Continuamos viendo las presentaciones de los compañeros de clase y me agarda la forma en la que se presentan varios de ellos"
+    },
+    {
+      "id": 7,
+      "date": "16/02/2022",
+      "content": "Vimos unj poco de como quiere la profesora que hagamos nuestras tareas y un compañero expuso su tarea enfrente de todos continuamos viendo repaso de automatas, como la definicion de un AFD, asi como los requisitos de AF, vimos en pocas palabras como identificar los automata, asi de unos trucos en Jflap y los principios basicos de los AD"
+    },
+    {
+      "id": 8,
+      "date": "18/02/2022",
+      "content": "Vimos un repaso de los sistemas operativos del kernel de linux y como esta construido,  continuamos con las presentaciones de los compañeros"
+    },
+    {
+      "id": 9,
+
+      "date": "21/02/2022",
+      "content": "Me presente yo y explique el reto de programacion que realice en python y contnuamos con los ejercicios de presentacion "
+    },
+    {
+      "id": 10,
+      "date": "23/02/2022",
+      "content": "Continuamos con las presentaciones  y algunos de los compañeros presentaron algunos ejercicios de los 40 que se nos asignaron "
+    },
+    {
+      "id": 11,
+      "date": "25/02/2022",
+      "content": "La profesora nos eplico como es la lista de cotejo y negociamos algunas cosas con ella de los porcentajes de las evalucaciones "
+    }
+  ]
 }
