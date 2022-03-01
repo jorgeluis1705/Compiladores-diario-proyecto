@@ -45,6 +45,7 @@ export const HomeComponent: FC = (): JSX.Element => {
       id: 4,
       image: "",
       seccion: "Proyecto",
+      route: "/proyecto",
     },
   ];
   return (
