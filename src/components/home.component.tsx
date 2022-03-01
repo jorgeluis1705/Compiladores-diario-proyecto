@@ -9,7 +9,8 @@ import {
   CardContent,
   Typography,
 } from "@mui/material";
-import { format } from "date-fns";
+import { useNavigate } from "react-router-dom";
+
 interface Classes {
   id: number;
   date: string;
@@ -17,11 +18,35 @@ interface Classes {
   image?: string;
 }
 export const HomeComponent: FC = (): JSX.Element => {
+  let navigate = useNavigate();
   const [classes, setClasses] = useState<Classes[]>([]);
   const datos = axiosClient.get("/classes");
   useEffect(() => {
     datos.then((e) => setClasses(e.data));
   }, []);
+  const secciones: any[] = [
+    {
+      id: 1,
+      image: "",
+      seccion: "Diario de clase Parcial 1",
+      route: "/p1",
+    },
+    {
+      id: 2,
+      image: "",
+      seccion: "Diario de clase Parcial 2",
+    },
+    {
+      id: 3,
+      image: "",
+      seccion: "Diario de clase Parcial 3",
+    },
+    {
+      id: 4,
+      image: "",
+      seccion: "Proyecto",
+    },
+  ];
   return (
     <Box
       sx={{
@@ -29,40 +54,72 @@ export const HomeComponent: FC = (): JSX.Element => {
         height: "100vh",
       }}
     >
-      <h1>Primer partcial</h1>
-      <Grid
-        container
-        direction="row"
-        justifyContent="space-evenly"
-        alignItems="center"
+      <Box
         sx={{
-          margin: "20 40",
+          backgroundImage:
+            "url('https://images.pexels.com/photos/7207641/pexels-photo-7207641.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260')",
+          height: "60%",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
         }}
-        spacing={5}
       >
-        {classes.map((e) => (
-          <Grid key={e.id} item xs={4}>
-            <Card>
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image={e.image}
-                  alt="Imagen relacionada"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    Clase {e.id} {new Date(e.date).toDateString()}
-                  </Typography>
-                  <Typography variant="h6" color="text.secondary">
-                    {e.content.slice(0, 80) + " ..."}
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
+        <Grid
+          sx={{
+            backgroundColor: "rgba(0, 0, 0, 0.6)",
+            height: "100%",
+          }}
+          container
+          direction="column"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Grid item xs={6}>
+            <Typography gutterBottom variant="h5" component="div">
+              {"Peña Real Jorge Luis"}
+            </Typography>
+            <Typography variant="h6" color="text.secondary">
+              {"4NM59"}
+            </Typography>
           </Grid>
-        ))}
-      </Grid>
+        </Grid>
+        <Grid
+          container
+          direction="row"
+          justifyContent="space-evenly"
+          alignItems="center"
+          sx={{
+            marginTop: "5rem",
+          }}
+          spacing={5}
+        >
+          {secciones.map((e) => (
+            <Grid
+              onClick={() => {
+                navigate(e.route);
+              }}
+              key={e.id}
+              item
+              xs={4}
+            >
+              <Card>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    height="140"
+                    image={e.image}
+                    alt="Imagen relacionada"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      {e.seccion}
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </Box>
     </Box>
   );
 };
