@@ -4,17 +4,20 @@
   "classes": [
     {
       "id": 1,
-      "date": "1/01/2022",
+      "date": "01/31/2022",
+      "image": "https://imgs.search.brave.com/-_61G7nJCaDcDOFzQ9t9uR1EPUBP7Iioce4QUaSiaGc/rs:fit:1062:750:1/g:ce/aHR0cHM6Ly93d3cu/dHVyaWpvYnMuY29t/L2Jsb2cvd3AtY29u/dGVudC91cGxvYWRz/LzIwMTgvMDgvcGV4/ZWxzLXBob3RvLTEy/NjYwMDcuanBlZw",
       "content": "La maestra no se presento y los chavos de servicio nos dejaron actividades, como los 40 ejercicios y el primer reto de programacion"
     },
     {
       "id": 2,
       "date": "2/02/2022",
+      "image": "https://imgs.search.brave.com/UNVDZ3MbwQC2PZIAmZC9vKgNvzq-AaK4mv6TmI_avoY/rs:fit:800:400:1/g:ce/aHR0cHM6Ly93d3cu/bWFrZXRlY2hlYXNp/ZXIuY29tL2Fzc2V0/cy91cGxvYWRzLzIw/MTgvMDUvYXdrLWNv/bW1hbmQtZ2V0dGlu/Zy1zdGFydGVkLWhl/cm8tODAweDQwMC5q/cGc",
       "content": "Nuevamente la profesora falto y los chicos de servicio nos dieron un poco de repaso para lograr el reto de programacion"
     },
     {
       "id": 3,
       "date": "4/02/2022",
+      "image": "https://imgs.search.brave.com/L2IeAkNPW6eZrhgjWtGEEtxg0oK1xNHLqbKnAmzjtyg/rs:fit:480:360:1/g:ce/aHR0cHM6Ly9pLnl0/aW1nLmNvbS92aS9w/ZkpTcXZRRk94SS9o/cWRlZmF1bHQuanBn",
       "content": "la profesora se presento y nos pregunto acerca de algunos elemento de automatas como el lenaguaje que acpta y nos ´resento una presentacion que ella usa en teoria de la computacion y donde obtener material de apoyo de clase"
     },
     {
@@ -55,8 +58,13 @@
     },
     {
       "id": 11,
-      "date": "25/02/2022",
+      "date": "02/25/2022",
       "content": "La profesora nos eplico como es la lista de cotejo y negociamos algunas cosas con ella de los porcentajes de las evalucaciones "
+    },
+    {
+      "id": 12,
+      "date": "02/28/2022",
+      "content": "Emepzamos con la presentacion del compañero Alex, checamos varias ejercicios de los 40 que se dejo "
     }
   ]
 }
