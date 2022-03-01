@@ -8,6 +8,7 @@ import {
 } from "@mui/material";
 import { FC, useState } from "react";
 import LoadingButton from "@mui/lab/LoadingButton";
+import Swal from "sweetalert2";
 
 export const ProyectComponent: FC = (): JSX.Element => {
   const [state, setState] = useState<string>("");
@@ -20,8 +21,22 @@ export const ProyectComponent: FC = (): JSX.Element => {
     setState(e.target.value.trim());
   };
   const handleClick = () => {
+    setLoading(true);
     const results = state.matchAll(regex);
-    console.log([...(results as any)]);
+    const array = [...(results as any)];
+    if (array.length && array[0]) {
+      Swal.fire("Good job!", "You clicked the button!", "success");
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong!",
+        footer: '<a href="">Why do I have this issue?</a>',
+      });
+    }
+    setTimeout(() => {
+      setLoading(false);
+    }, 2500);
   };
 
   return (
@@ -92,6 +107,7 @@ export const ProyectComponent: FC = (): JSX.Element => {
             loading={loading}
             loadingIndicator="Loading..."
             variant="outlined"
+            disabled={state.length < 6}
           >
             Fetch data
           </LoadingButton>
