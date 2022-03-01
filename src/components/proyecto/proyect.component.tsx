@@ -1,23 +1,29 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { AccountCircle } from "@mui/icons-material";
+import {
+  Box,
+  Grid,
+  InputAdornment,
+  TextField,
+  Typography,
+} from "@mui/material";
 import { FC, useState } from "react";
+import LoadingButton from "@mui/lab/LoadingButton";
 
 export const ProyectComponent: FC = (): JSX.Element => {
-  const regex = "[a-zA-Z,0-9]+@alumno.ipn.mx";
   const [state, setState] = useState<string>("");
-  const [validInput, setValidInput] = useState<boolean>(false);
+  const [loading, setLoading] = useState(false);
+  const regex = new RegExp(/[a-zA-Z,0-9]+@alumno.ipn.mx/gm);
 
-  const handleChange = (e: any) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>
+  ) => {
     setState(e.target.value.trim());
   };
   const handleClick = () => {
-    const meses = new RegExp(regex);
-    const results = state.matchAll(meses);
-    const array = [...(results as unknown as any[])];
-
-    if (array.length && array[0]) {
-      console.log(array[0]);
-    }
+    const results = state.matchAll(regex);
+    console.log([...(results as any)]);
   };
+
   return (
     <Box
       sx={{
@@ -57,6 +63,40 @@ export const ProyectComponent: FC = (): JSX.Element => {
           </Grid>
         </Grid>
       </Box>
+      <Grid
+        container
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+        rowSpacing={1}
+        columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+      >
+        <Grid item xs={6}>
+          <Box sx={{ "& > :not(style)": { m: 1 } }}>
+            <TextField
+              id="input-with-icon-textfield"
+              label="TextField"
+              InputProps={{
+                startAdornment: (
+                  <InputAdornment position="start">
+                    <AccountCircle />
+                  </InputAdornment>
+                ),
+              }}
+              variant="standard"
+              onChange={handleChange}
+            />
+          </Box>
+          <LoadingButton
+            onClick={handleClick}
+            loading={loading}
+            loadingIndicator="Loading..."
+            variant="outlined"
+          >
+            Fetch data
+          </LoadingButton>
+        </Grid>
+      </Grid>
     </Box>
   );
 };
