@@ -10,6 +10,7 @@ import {
   Typography,
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import { Rutas } from "../models/rutas";
 
 interface Classes {
   id: number;
@@ -19,12 +20,8 @@ interface Classes {
 }
 export const HomeComponent: FC = (): JSX.Element => {
   let navigate = useNavigate();
-  const [classes, setClasses] = useState<Classes[]>([]);
-  const datos = axiosClient.get("/classes");
-  useEffect(() => {
-    datos.then((e) => setClasses(e.data));
-  }, []);
-  const secciones: any[] = [
+
+  const secciones: Rutas[] = [
     {
       id: 1,
       image: "",
@@ -35,11 +32,13 @@ export const HomeComponent: FC = (): JSX.Element => {
       id: 2,
       image: "",
       seccion: "Diario de clase Parcial 2",
+      route: "/p1",
     },
     {
       id: 3,
       image: "",
       seccion: "Diario de clase Parcial 3",
+      route: "/p1",
     },
     {
       id: 4,
