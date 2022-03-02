@@ -25,7 +25,8 @@ export const ProyectComponent: FC = (): JSX.Element => {
     const results = state.matchAll(regex);
     const array = [...(results as any)];
     if (array.length && array[0]) {
-      Swal.fire("Good job!", "You clicked the button!", "success");
+      Swal.fire("Good job!", "Genial", "success");
+      console.log(array[0][0]);
     } else {
       Swal.fire({
         icon: "error",
