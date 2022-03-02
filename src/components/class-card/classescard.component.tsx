@@ -34,7 +34,7 @@ export const ClassescarComponent: FC<{ item: Classes }> = ({
           <CardActionArea>
             <CardMedia
               component="img"
-              height="140"
+              height="250"
               image={item.image}
               alt="Imagen relacionada"
             />
@@ -60,7 +60,7 @@ export const ClassescarComponent: FC<{ item: Classes }> = ({
             <CardActionArea>
               <CardMedia
                 component="img"
-                height="250"
+                height="400"
                 image={item.image}
                 alt="Imagen relacionada"
               />

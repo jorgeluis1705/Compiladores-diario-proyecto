@@ -1,11 +1,10 @@
 import { Grid } from "@mui/material";
-import { FC, useEffect, useState } from "react";
-import { axiosClient } from "../../axios/axiosclient";
+import { FC, useState } from "react";
 import { Classes } from "../../models/clases";
 import { ClassescarComponent } from "../class-card/classescard.component";
 import cls from "../../db.json";
 export const Parcial1Component: FC = (): JSX.Element => {
-  const [classes, setClasses] = useState<Classes[]>(cls.classes);
+  const [classes] = useState<Classes[]>(cls.classes);
 
   return (
     <Grid

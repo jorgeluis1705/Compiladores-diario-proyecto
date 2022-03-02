@@ -21,27 +21,32 @@
     {
       "id": 4,
       "date": "02/09/2022",
+      "image": "https://imgs.search.brave.com/kCH4Zn77QU8a78JZxVg66hh6cHhUV_Gn2ik7UW2cefY/rs:fit:200:159:1/g:ce/aHR0cDovL3d3dy5j/cy5kdWtlLmVkdS9j/c2VkL2pmbGFwL3R1/dG9yaWFsL2pmbGFw/TG9nby5KUEc",
       "content": "Continuamos viendo la prsentacion de la profesora, nos dio un repaso de los automatas, como su definicion formal y en lenguaje que acepta tambien nos dio un repaso del uso de jflap y varios ejemplos de automatas"
     },
     {
       "id": 5,
       "date": "02/11/2022",
+      "image": "https://imgs.search.brave.com/Fer_EIF8MLU4t3a4UMxDWEP3XdrUyx_csVTVsid23xU/rs:fit:770:450:1/g:ce/aHR0cHM6Ly9pbmZv/cm1hdGljYWRlbGdv/bGZvLmVkdS5teC9o/b21lL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIwLzA3LzE1LVB1/bnRvcy1xdWUtZGVi/ZXMtZXZpdGFyLWFs/LWhhY2VyLXR1cy1w/cmVzZW50YWNpb25l/cy1lbGVjdHIlQzMl/QjNuaWNhcy03NzB4/NDUwLmpwZw",
       "content": "Emepzamos viendo las presentaciones de los compañeros de clase"
     },
     {
       "id": 6,
       "date": "02/14/2022",
-      "content": "Continuamos viendo las presentaciones de los compañeros de clase y me agarda la forma en la que se presentan varios de ellos"
+      "content": "Continuamos viendo las presentaciones de los compañeros de clase y me agarda la forma en la que se presentan varios de ellos",
+      "image": "https://imgs.search.brave.com/egAfywTPEPfWoa0FdF1NtkYWtrSg-Gg_Y9cYb-OzLZY/rs:fit:626:417:1/g:ce/aHR0cHM6Ly9pbWFn/ZS5mcmVlcGlrLmNv/bS9mcmVlLXBob3Rv/L21hbi13aXRoLXNp/Z24td2l0aC1xdWVz/dGlvbi1tYXJrLWJh/Y2tncm91bmQtd2l0/aC1xdWVzdGlvbi1t/YXJrc18xMTM0LTU1/Ny5qcGc"
     },
     {
       "id": 7,
       "date": "02/16/2022",
-      "content": "Vimos unj poco de como quiere la profesora que hagamos nuestras tareas y un compañero expuso su tarea enfrente de todos continuamos viendo repaso de automatas, como la definicion de un AFD, asi como los requisitos de AF, vimos en pocas palabras como identificar los automata, asi de unos trucos en Jflap y los principios basicos de los AD"
+      "content": "Vimos un poco de como quiere la profesora que hagamos nuestras tareas y un compañero expuso su tarea enfrente de todos continuamos viendo repaso de automatas, como la definicion de un AFD, asi como los requisitos de AF, vimos en pocas palabras como identificar los automata, asi de unos trucos en Jflap y los principios basicos de los AD",
+      "image": "https://imgs.search.brave.com/KJDY9rd3SmtJnEE3igJNdcdzg4MWl6fwZsCAlIlB7Do/rs:fit:1200:720:1/g:ce/aHR0cHM6Ly9pLnl0/aW1nLmNvbS92aS9T/Y1IxVDFETUUxNC9t/YXhyZXNkZWZhdWx0/LmpwZw"
     },
     {
       "id": 8,
       "date": "02/18/2022",
-      "content": "Vimos un repaso de los sistemas operativos del kernel de linux y como esta construido,  continuamos con las presentaciones de los compañeros"
+      "content": "Vimos un repaso de los sistemas operativos del kernel de linux y como esta construido,  continuamos con las presentaciones de los compañeros",
+      "image": "https://imgs.search.brave.com/A274AaqO5xx_6wyh8NPDFT6T5dTzHYAx-34oC16qfN4/rs:fit:758:435:1/g:ce/aHR0cHM6Ly9zaXRl/cy5nb29nbGUuY29t/L3NpdGUvc2lzdGVt/YXNvcGVyYXRpdm9z/aG4vXy9yc3JjLzE0/NjE5MDE1NDMxNTYv/Z251LWxpbnV4L2du/dWxpbnV4LWxvZ28u/cG5n"
     },
     {
       "id": 9,
