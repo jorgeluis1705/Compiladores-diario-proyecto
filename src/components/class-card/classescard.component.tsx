@@ -8,6 +8,8 @@ import {
   Box,
   Modal,
 } from "@mui/material";
+import { format } from "date-fns";
+import { eo, es } from "date-fns/esm/locale";
 import { FC, Fragment, useState } from "react";
 import { Classes } from "../../models/clases";
 const style = {
@@ -40,7 +42,10 @@ export const ClassescarComponent: FC<{ item: Classes }> = ({
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
-                Clase {item.id} {new Date(item.date).toDateString()}
+                Clase {item.id + ": "}
+                {format(new Date(item.date), "MMMM dd yyyy", {
+                  locale: es,
+                })}
               </Typography>
               <Typography variant="h6" color="text.secondary">
                 {item.content.slice(0, 80) + " ..."}
