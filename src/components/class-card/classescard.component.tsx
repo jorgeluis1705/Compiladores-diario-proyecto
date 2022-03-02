@@ -71,7 +71,10 @@ export const ClassescarComponent: FC<{ item: Classes }> = ({
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  Clase {item.id} {new Date(item.date).toDateString()}
+                  Clase {item.id}
+                  {format(new Date(item.date), "MMMM dd yyyy", {
+                    locale: es,
+                  })}
                 </Typography>
                 <Typography variant="h6" color="text.secondary">
                   {item.content}
