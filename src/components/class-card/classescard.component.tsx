@@ -9,7 +9,7 @@ import {
   Modal,
 } from "@mui/material";
 import { format } from "date-fns";
-import { eo, es } from "date-fns/esm/locale";
+import { es } from "date-fns/esm/locale";
 import { FC, Fragment, useState } from "react";
 import { Classes } from "../../models/clases";
 const style = {
