@@ -9,7 +9,7 @@ import { ProyectComponent } from "./components/proyecto/proyect.component";
 function App() {
   return (
     <Fragment>
-      <NavBar />
+      {/*    <NavBar /> */}
       <Routes>
         <Route path="" element={<HomeComponent />} />
         <Route path="/p1" element={<Parcial1Component />} />
