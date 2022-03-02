@@ -3,6 +3,7 @@ import {
   Box,
   Grid,
   InputAdornment,
+  Stack,
   TextField,
   Typography,
 } from "@mui/material";
@@ -92,10 +93,26 @@ export const ProyectComponent: FC = (): JSX.Element => {
         columnSpacing={{ xs: 1, sm: 2, md: 3 }}
       >
         <Grid item xs={6}>
-          <Box sx={{ "& > :not(style)": { m: 1 } }}>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+          aspernatur repellat hic laboriosam vel consequatur explicabo amet vero
+          sint? Quo repellendus fugit quis repudiandae animi, tempora iusto
+          adipisci reprehenderit nesciunt.
+          <Stack
+            direction="column"
+            justifyContent="center"
+            alignItems="center"
+            spacing={2}
+            sx={{
+              marginTop: 5,
+            }}
+          >
             <TextField
               id="input-with-icon-textfield"
-              label="TextField"
+              label="Ingresa un correo"
+              sx={{
+                width: "100%",
+              }}
+              placeholder={"correo@alumno.ipn.mx"}
               value={state}
               InputProps={{
                 startAdornment: (
@@ -107,16 +124,18 @@ export const ProyectComponent: FC = (): JSX.Element => {
               variant="standard"
               onChange={handleChange}
             />
-          </Box>
-          <LoadingButton
-            onClick={handleClick}
-            loading={loading}
-            loadingIndicator="Loading..."
-            variant="outlined"
-            disabled={state.length < 6}
-          >
-            Validar Correo
-          </LoadingButton>
+            <LoadingButton
+              onClick={handleClick}
+              loading={loading}
+              variant="outlined"
+              disabled={state.length < 6}
+              sx={{
+                width: "100%",
+              }}
+            >
+              Validar Correo
+            </LoadingButton>
+          </Stack>
         </Grid>
       </Grid>
     </Box>
