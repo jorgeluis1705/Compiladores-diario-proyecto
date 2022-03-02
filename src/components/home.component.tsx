@@ -1,5 +1,4 @@
-import { FC, useEffect, useState } from "react";
-import { axiosClient } from "../axios/axiosclient";
+import { FC } from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import {
@@ -12,12 +11,6 @@ import {
 import { useNavigate } from "react-router-dom";
 import { Rutas } from "../models/rutas";
 
-interface Classes {
-  id: number;
-  date: string;
-  content: string;
-  image?: string;
-}
 export const HomeComponent: FC = (): JSX.Element => {
   let navigate = useNavigate();
 
