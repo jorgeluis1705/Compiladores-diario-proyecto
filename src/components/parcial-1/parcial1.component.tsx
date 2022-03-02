@@ -8,12 +8,9 @@ import {
 } from "@mui/material";
 import { FC, useEffect, useState } from "react";
 import { axiosClient } from "../../axios/axiosclient";
-interface Classes {
-  id: number;
-  date: string;
-  content: string;
-  image?: string;
-}
+import { Classes } from "../../models/clases";
+import { ClassescarComponent } from "../class-card/classescard.component";
+
 export const Parcial1Component: FC = (): JSX.Element => {
   const [classes, setClasses] = useState<Classes[]>([]);
   const datos = axiosClient.get("/classes");
@@ -32,26 +29,7 @@ export const Parcial1Component: FC = (): JSX.Element => {
       spacing={5}
     >
       {classes.map((e) => (
-        <Grid key={e.id} item xs={4}>
-          <Card>
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                height="140"
-                image={e.image}
-                alt="Imagen relacionada"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  Clase {e.id} {new Date(e.date).toDateString()}
-                </Typography>
-                <Typography variant="h6" color="text.secondary">
-                  {e.content.slice(0, 80) + " ..."}
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-        </Grid>
+        <ClassescarComponent key={e.id} item={e} />
       ))}
     </Grid>
   );
