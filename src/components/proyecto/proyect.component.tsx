@@ -36,7 +36,6 @@ export const ProyectComponent: FC = (): JSX.Element => {
         icon: "error",
         title: "Oops...",
         text: `El Correo ${state} no pertence al IPN porfavor intenta de nuevo`,
-        footer: '<a href="">Why do I have this issue?</a>',
       });
     }
     setState("");
@@ -71,15 +70,13 @@ export const ProyectComponent: FC = (): JSX.Element => {
           justifyContent="center"
           alignItems="center"
         >
-          <Grid item xs={6}>
+          <Grid item xs={6} sx={{ color: "white" }}>
             <Typography gutterBottom variant="h5" component="div">
               {"Peña Real Jorge Luis"}
             </Typography>
-            <Typography variant="h6" color="text.secondary">
-              {"4NM59"}
-            </Typography>
-            <Typography variant="h6" color="text.secondary">
-              {"Proyecto Analizador lexico"}
+            <Typography variant="h6">{"4NM59"}</Typography>
+            <Typography variant="h6">
+              {"Proyecto Analizador lexico en JavaScript"}
             </Typography>
           </Grid>
         </Grid>
@@ -93,10 +90,11 @@ export const ProyectComponent: FC = (): JSX.Element => {
         columnSpacing={{ xs: 1, sm: 2, md: 3 }}
       >
         <Grid item xs={6}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
-          aspernatur repellat hic laboriosam vel consequatur explicabo amet vero
-          sint? Quo repellendus fugit quis repudiandae animi, tempora iusto
-          adipisci reprehenderit nesciunt.
+          <Typography gutterBottom variant="h4" component="div">
+            {"En la parte de abajo hay un area de texto para ingresar un correo electronico" +
+              " La validacion se encargara de saber si es un correo valido del IPN o no " +
+              " En ambos casos se mostrara una notificacion "}
+          </Typography>
           <Stack
             direction="column"
             justifyContent="center"
