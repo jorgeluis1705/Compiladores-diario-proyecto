@@ -17,7 +17,8 @@ export const HomeComponent: FC = (): JSX.Element => {
   const secciones: Rutas[] = [
     {
       id: 1,
-      image: "",
+      image:
+        "https://imgs.search.brave.com/5RmsPdhXQGteaksQLTNmEtHQhEeTG_WqrWUt7mYzZjY/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/YnJhaWxsZXNpZ25z/dWsuY28udWsvd3At/Y29udGVudC91cGxv/YWRzLzIwMjAvMDMv/QlIzMjdfU0FBLmpw/Zw",
       seccion: "Diario de clase Parcial 1",
       route: "/p1",
     },
@@ -35,7 +36,8 @@ export const HomeComponent: FC = (): JSX.Element => {
     },
     {
       id: 4,
-      image: "",
+      image:
+        "https://imgs.search.brave.com/vdBnstASsq6gs_mfXOFLkW9SSux_CfFFlA-gg2gLJ58/rs:fit:1024:768:1/g:ce/aHR0cHM6Ly9pY29k/ZW1hZy5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMTkvMDUv/SlMtUmVnRXguanBl/Zw",
       seccion: "Proyecto",
       route: "/proyecto",
     },
@@ -98,7 +100,7 @@ export const HomeComponent: FC = (): JSX.Element => {
                 <CardActionArea>
                   <CardMedia
                     component="img"
-                    height="140"
+                    height="400"
                     image={e.image}
                     alt="Imagen relacionada"
                   />
