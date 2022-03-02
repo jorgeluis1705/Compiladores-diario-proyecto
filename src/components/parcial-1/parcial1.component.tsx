@@ -1,11 +1,4 @@
-import {
-  Grid,
-  Card,
-  CardActionArea,
-  CardMedia,
-  CardContent,
-  Typography,
-} from "@mui/material";
+import { Grid } from "@mui/material";
 import { FC, useEffect, useState } from "react";
 import { axiosClient } from "../../axios/axiosclient";
 import { Classes } from "../../models/clases";
