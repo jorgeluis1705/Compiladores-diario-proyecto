@@ -25,16 +25,20 @@ export const ProyectComponent: FC = (): JSX.Element => {
     const results = state.matchAll(regex);
     const array = [...(results as any)];
     if (array.length && array[0]) {
-      Swal.fire("Good job!", "Genial", "success");
-      console.log(array[0][0]);
+      Swal.fire(
+        "Genial",
+        `El correo ${state} es de un estudiante registrado del IPN`,
+        "success"
+      );
     } else {
       Swal.fire({
         icon: "error",
         title: "Oops...",
-        text: "Something went wrong!",
+        text: `El Correo ${state} no pertence al IPN porfavor intenta de nuevo`,
         footer: '<a href="">Why do I have this issue?</a>',
       });
     }
+    setState("");
     setTimeout(() => {
       setLoading(false);
     }, 2500);
@@ -92,6 +96,7 @@ export const ProyectComponent: FC = (): JSX.Element => {
             <TextField
               id="input-with-icon-textfield"
               label="TextField"
+              value={state}
               InputProps={{
                 startAdornment: (
                   <InputAdornment position="start">
@@ -110,7 +115,7 @@ export const ProyectComponent: FC = (): JSX.Element => {
             variant="outlined"
             disabled={state.length < 6}
           >
-            Fetch data
+            Validar Correo
           </LoadingButton>
         </Grid>
       </Grid>
