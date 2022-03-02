@@ -3,13 +3,10 @@ import { FC, useEffect, useState } from "react";
 import { axiosClient } from "../../axios/axiosclient";
 import { Classes } from "../../models/clases";
 import { ClassescarComponent } from "../class-card/classescard.component";
-
+import cls from "../../db.json";
 export const Parcial1Component: FC = (): JSX.Element => {
-  const [classes, setClasses] = useState<Classes[]>([]);
-  const datos = axiosClient.get("/classes");
-  useEffect(() => {
-    datos.then((e) => setClasses(e.data));
-  }, []);
+  const [classes, setClasses] = useState<Classes[]>(cls.classes);
+
   return (
     <Grid
       container
