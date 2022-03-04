@@ -10,7 +10,7 @@ function App() {
     <Fragment>
       {/*    <NavBar /> */}
       <Routes>
-        <Route path="" element={<HomeComponent />} />
+        <Route path="" element={<Parcial1Component />} />
         <Route path="/p1" element={<Parcial1Component />} />
         <Route path="/proyecto" element={<ProyectComponent />} />
       </Routes>
