@@ -38,9 +38,9 @@ export const ProyectComponent: FC = (): JSX.Element => {
         text: `El Correo ${state} no pertence al IPN porfavor intenta de nuevo`,
       });
     }
-    setState("");
     setTimeout(() => {
       setLoading(false);
+      setState("");
     }, 2500);
   };
 

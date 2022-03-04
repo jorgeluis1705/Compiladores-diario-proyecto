@@ -17,7 +17,7 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 800,
+  width: "52%",
   bgcolor: "background.paper",
   border: "2px solid #000",
   boxShadow: 24,
@@ -31,7 +31,7 @@ export const ClassescarComponent: FC<{ item: Classes }> = ({
   const handleClose = () => setOpen(false);
   return (
     <Fragment>
-      <Grid onClick={handleOpen} item xs={4}>
+      <Grid onClick={handleOpen} item xs={12} md={4} lg={6}>
         <Card>
           <CardActionArea>
             <CardMedia
