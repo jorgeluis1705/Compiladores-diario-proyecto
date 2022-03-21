@@ -48,7 +48,7 @@ export const ClassescarComponent: FC<{ item: Classes }> = ({
                 })}
               </Typography>
               <Typography variant="h6" color="text.secondary">
-                {item.content.slice(0, 80) + " ..."}
+                {item.content + " ..."}
               </Typography>
             </CardContent>
           </CardActionArea>
