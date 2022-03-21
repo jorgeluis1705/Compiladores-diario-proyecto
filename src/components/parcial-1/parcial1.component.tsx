@@ -2,9 +2,10 @@ import { Box, Grid, Typography } from "@mui/material";
 import { FC, useState } from "react";
 import { Classes } from "../../models/clases";
 import { ClassescarComponent } from "../class-card/classescard.component";
-import cls from "../../db.json";
-export const Parcial1Component: FC = (): JSX.Element => {
-  const [classes] = useState<Classes[]>(cls.classes);
+export const Parcial1Component: FC<{ CLASSESPROP: Classes[] }> = ({
+  CLASSESPROP,
+}): JSX.Element => {
+  const [classes] = useState<Classes[]>(CLASSESPROP);
 
   return (
     <Box

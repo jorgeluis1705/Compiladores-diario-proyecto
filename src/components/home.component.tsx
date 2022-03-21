@@ -26,7 +26,7 @@ export const HomeComponent: FC = (): JSX.Element => {
       id: 2,
       image: "",
       seccion: "Diario de clase Parcial 2",
-      route: "/p1",
+      route: "/p2",
     },
     {
       id: 3,
