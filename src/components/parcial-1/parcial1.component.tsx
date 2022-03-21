@@ -2,9 +2,10 @@ import { Box, Grid, Typography } from "@mui/material";
 import { FC, useState } from "react";
 import { Classes } from "../../models/clases";
 import { ClassescarComponent } from "../class-card/classescard.component";
-export const Parcial1Component: FC<{ CLASSESPROP: Classes[] }> = ({
-  CLASSESPROP,
-}): JSX.Element => {
+export const Parcial1Component: FC<{
+  CLASSESPROP: Classes[];
+  title: string;
+}> = ({ CLASSESPROP, title }): JSX.Element => {
   const [classes] = useState<Classes[]>(CLASSESPROP);
 
   return (
@@ -51,7 +52,7 @@ export const Parcial1Component: FC<{ CLASSESPROP: Classes[] }> = ({
           </Grid>
           <Grid item xs={4}>
             <Typography gutterBottom variant="h5" component="div">
-              {"Diario de clase Parcial 1"}
+              {"Diario de clase "} {title}
             </Typography>
           </Grid>
         </Grid>

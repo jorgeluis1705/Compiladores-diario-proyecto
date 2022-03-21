@@ -15,11 +15,15 @@ function App() {
         <Route path="" element={<HomeComponent />} />
         <Route
           path="/p1"
-          element={<Parcial1Component CLASSESPROP={cls.classes} />}
+          element={
+            <Parcial1Component CLASSESPROP={cls.classes} title={"Parcial 1"} />
+          }
         />
         <Route
           path="/p2"
-          element={<Parcial1Component CLASSESPROP={P2.classes} />}
+          element={
+            <Parcial1Component CLASSESPROP={P2.classes} title={"Parcial 2"} />
+          }
         />
         <Route path="/proyecto" element={<ProyectComponent />} />
       </Routes>
