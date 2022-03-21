@@ -14,8 +14,8 @@ import Swal from "sweetalert2";
 export const ProyectComponent: FC = (): JSX.Element => {
   const [state, setState] = useState<string>("");
   const [loading, setLoading] = useState(false);
-  const regex = new RegExp(/[a-zA-Z,0-9]+@alumno.ipn.mx/gm);
-
+  // const regex = new RegExp(/[a-zA-Z,0-9]+@alumno.ipn.mx/gm);
+  const otrosRegex = new RegExp(/[a-zA-Z,0-9]+@alumno.ipn.m[^-\s]/gs);
   const handleChange = (
     e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>
   ) => {
@@ -23,9 +23,14 @@ export const ProyectComponent: FC = (): JSX.Element => {
   };
   const handleClick = () => {
     setLoading(true);
-    const results = state.matchAll(regex);
+    const results = state.matchAll(otrosRegex);
     const array = [...(results as any)];
-    if (array.length && array[0]) {
+    console.log({ array });
+    if (
+      array.length &&
+      array[0] &&
+      (array[0].input as string).split("@")[1] === "alumno.ipn.mx"
+    ) {
       Swal.fire(
         "Genial",
         `El correo ${state} es de un estudiante registrado del IPN`,
