@@ -37,11 +37,11 @@ export const ProyectComponent: FC = (): JSX.Element => {
           "success"
         );
       } else {
-        Swal.fire({
-          icon: "error",
-          title: "Oops...",
-          text: `El Correo  <h3 style="color: green;">${state} </h3>  no pertence al IPN porfavor intenta de nuevo`,
-        });
+        Swal.fire(
+          "Oops...",
+          `El Correo  <h3 style="color: red;">${state} </h3>  no pertence al IPN porfavor intenta de nuevo`,
+          "error"
+        );
       }
       setLoading(false);
       setState("");
