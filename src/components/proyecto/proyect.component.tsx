@@ -25,25 +25,24 @@ export const ProyectComponent: FC = (): JSX.Element => {
     setLoading(true);
     const results = state.matchAll(otrosRegex);
     const array = [...(results as any)];
-    console.log({ array });
-    if (
-      array.length &&
-      array[0] &&
-      (array[0].input as string).split("@")[1] === "alumno.ipn.mx"
-    ) {
-      Swal.fire(
-        "Genial",
-        `El correo ${state} es de un estudiante registrado del IPN`,
-        "success"
-      );
-    } else {
-      Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: `El Correo ${state} no pertence al IPN porfavor intenta de nuevo`,
-      });
-    }
     setTimeout(() => {
+      if (
+        array.length &&
+        array[0] &&
+        (array[0].input as string).split("@")[1] === "alumno.ipn.mx"
+      ) {
+        Swal.fire(
+          "Genial",
+          `El correo <h3 style="color: green;">${state} </h3>  es de un estudiante registrado del IPN`,
+          "success"
+        );
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: `El Correo  <h3 style="color: green;">${state} </h3>  no pertence al IPN porfavor intenta de nuevo`,
+        });
+      }
       setLoading(false);
       setState("");
     }, 2500);
@@ -115,6 +114,9 @@ export const ProyectComponent: FC = (): JSX.Element => {
               sx={{
                 width: "100%",
               }}
+              className={"xd"}
+              type="email"
+              required={true}
               placeholder={"correo@alumno.ipn.mx"}
               value={state}
               InputProps={{

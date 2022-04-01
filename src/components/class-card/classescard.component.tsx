@@ -31,7 +31,16 @@ export const ClassescarComponent: FC<{ item: Classes }> = ({
   const handleClose = () => setOpen(false);
   return (
     <Fragment>
-      <Grid onClick={handleOpen} item xs={12} md={4} lg={6}>
+      <Grid
+        sx={{
+          height: 600,
+        }}
+        onClick={handleOpen}
+        item
+        xs={12}
+        md={4}
+        lg={6}
+      >
         <Card>
           <CardActionArea>
             <CardMedia
