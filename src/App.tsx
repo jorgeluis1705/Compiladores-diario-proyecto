@@ -5,7 +5,7 @@ import { Fragment } from "react";
 import { Parcial1Component } from "./components/parcial-1/parcial1.component";
 import { ProyectComponent } from "./components/proyecto/proyect.component";
 import cls from "./db.json";
-import P2 from "./parcila_2.json";
+import P2 from "./parcial_2.json";
 
 function App() {
   return (
