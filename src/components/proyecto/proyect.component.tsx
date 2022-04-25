@@ -11,12 +11,11 @@ import { FC, useState } from "react";
 import LoadingButton from "@mui/lab/LoadingButton";
 import Swal from "sweetalert2";
 import { isValidArray } from "./utils/validatearray";
-
+import { otrosRegex as regularExpp } from "./utils/regularExp";
 export const ProyectComponent: FC = (): JSX.Element => {
   const [state, setState] = useState<string>("");
   const [loading, setLoading] = useState(false);
-  // const regex = new RegExp(/[a-zA-Z,0-9]+@alumno.ipn.mx/gm);
-  const otrosRegex = new RegExp(/[a-zA-Z,0-9]+@alumno.ipn.m[^-\s]/gs);
+  const regex = new RegExp(/[a-zA-Z,0-9]+@alumno.ipn.mx/gm);
   const handleChange = (
     e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>
   ) => {
@@ -24,7 +23,7 @@ export const ProyectComponent: FC = (): JSX.Element => {
   };
   const handleClick = () => {
     setLoading(true);
-    const results = state.matchAll(otrosRegex);
+    const results = state.matchAll(regularExpp);
     const array = [...(results as any)];
     setTimeout(() => {
       if (isValidArray(array)) {
