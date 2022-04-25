@@ -10,6 +10,7 @@ import {
 import { FC, useState } from "react";
 import LoadingButton from "@mui/lab/LoadingButton";
 import Swal from "sweetalert2";
+import { isValidArray } from "./utils/validatearray";
 
 export const ProyectComponent: FC = (): JSX.Element => {
   const [state, setState] = useState<string>("");
@@ -26,11 +27,7 @@ export const ProyectComponent: FC = (): JSX.Element => {
     const results = state.matchAll(otrosRegex);
     const array = [...(results as any)];
     setTimeout(() => {
-      if (
-        array.length &&
-        array[0] &&
-        (array[0].input as string).split("@")[1] === "alumno.ipn.mx"
-      ) {
+      if (isValidArray(array)) {
         Swal.fire(
           "Genial",
           `El correo <h3 style="color: green;">${state} </h3>  es de un estudiante registrado del IPN`,
