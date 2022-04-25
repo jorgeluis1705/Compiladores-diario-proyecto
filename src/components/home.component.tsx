@@ -18,13 +18,14 @@ export const HomeComponent: FC = (): JSX.Element => {
     {
       id: 1,
       image:
-        "https://imgs.search.brave.com/5RmsPdhXQGteaksQLTNmEtHQhEeTG_WqrWUt7mYzZjY/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/YnJhaWxsZXNpZ25z/dWsuY28udWsvd3At/Y29udGVudC91cGxv/YWRzLzIwMjAvMDMv/QlIzMjdfU0FBLmpw/Zw",
+        "https://imgs.search.brave.com/8hxkYlZFnN3R9AkrIsvpsQ-RDbjNwB4FJ8dSIxSo-ag/rs:fit:600:600:1/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvbnVtYmVyMS9u/dW1iZXIxX1BORzE0/ODkwLnBuZw",
       seccion: "Diario de clase Parcial 1",
       route: "/p1",
     },
     {
       id: 2,
-      image: "",
+      image:
+        "https://imgs.search.brave.com/WBY0M_5v9Q8AgoMVLutQs4opRyH4WnsTmJn0p1unlBM/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvbnVtYmVyMi9O/dW1iZXIlMjAyJTIw/UE5HJTIwaW1hZ2Vz/JTIwZnJlZSUyMGRv/d25sb2FkX1BORzE0/OTI3LnBuZw",
       seccion: "Diario de clase Parcial 2",
       route: "/p2",
     },
