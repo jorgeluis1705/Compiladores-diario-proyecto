@@ -64,7 +64,7 @@ export const Parcial1Component: FC<{
           sx={{
             marginTop: 5,
           }}
-          spacing={5}
+          spacing={13}
         >
           {classes.map((e) => (
             <ClassescarComponent key={e.id} item={e} />

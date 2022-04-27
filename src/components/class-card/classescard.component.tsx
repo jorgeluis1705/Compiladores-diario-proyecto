@@ -33,7 +33,8 @@ export const ClassescarComponent: FC<{ item: Classes }> = ({
     <Fragment>
       <Grid
         sx={{
-          height: 600,
+          minHeight: 600,
+          marginTop: 10,
         }}
         onClick={handleOpen}
         item
@@ -45,7 +46,7 @@ export const ClassescarComponent: FC<{ item: Classes }> = ({
           <CardActionArea>
             <CardMedia
               component="img"
-              height="250"
+              height="350"
               image={item.image}
               alt="Imagen relacionada"
             />
