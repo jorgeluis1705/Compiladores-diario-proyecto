@@ -10,7 +10,7 @@ import {
 import { FC, useState } from "react";
 import LoadingButton from "@mui/lab/LoadingButton";
 import Swal from "sweetalert2";
-import { isValidArray } from "./utils/validatearray";
+import { isValidArray, isValidArrayProfe } from "./utils/validatearray";
 import { otrosRegex as regularExpp } from "./utils/regularExp";
 export const ProyectComponent: FC = (): JSX.Element => {
   const [state, setState] = useState<string>("");
@@ -30,6 +30,12 @@ export const ProyectComponent: FC = (): JSX.Element => {
         Swal.fire(
           "Genial",
           `El correo <h3 style="color: green;">${state} </h3>  es de un estudiante registrado del IPN`,
+          "success"
+        );
+      } else if (isValidArrayProfe(array)) {
+        Swal.fire(
+          "Genial",
+          `El correo <h3 style="color: green;">${state} </h3>  es de un profesor registrado del IPN`,
           "success"
         );
       } else {
