@@ -1,0 +1,95 @@
+{
+  "classes": [
+    {
+      "id": 1,
+      "date": "05/02/2022",
+      "image": "",
+      "content": "Hoy la profesora nos dijo que podemos mandar ya todo para tener lista la calificacion del parcial, me siento liberado ya que esta es la materia a la que mas tiempo le he dedicado en este semestre :) veo que valio la pena el esfuerzo"
+    },
+    {
+      "id": 2,
+      "date": "05/04/2022",
+      "image": "",
+      "content": "Hoy la profesora resolvio unas dudas de calificaciones ya que ella ya subio califiaciones al SAES y nos explico la forma de trabajar este ultimo corte, espero quen no se complique mucho ya que me encuentro trabajando :C "
+    },
+
+    {
+      "id": 3,
+      "date": "05/06/2022",
+      "image": "",
+      "content": ""
+    },
+    {
+      "id": 4,
+      "date": "05/09/2022",
+      "image": "",
+      "content": ""
+    },
+    {
+      "id": 5,
+      "date": "05/11/2022",
+      "image": "",
+      "content": ""
+    },
+    {
+      "id": 6,
+      "date": "05/16/2022",
+      "image": "",
+      "content": "Vamos a emepzar a ver las exposicones de los proyectos que se tienen una califiacion de 10 o por el otro lado exponer algun ejercicio que se aya mandado con anterioridad en la nueva bateria de ejercicios, me siento relajado ya que mi proyecto la profesora lo califico con 10, continuamos viendo la ultima parte de los ejercicios de las GLC la verdad no estan dificoles pero tanto verlas se hace algo  dificl o pesado seguir viendolas"
+    },
+    {
+      "id": 7,
+      "date": "05/18/2022",
+      "image": "",
+      "content": "Este dia no hubo clase asi que esta bastante bien ya que tuve una entrevuista de trabajo ese dia "
+    },
+    {
+      "id": 8,
+      "date": "05/20/2022",
+      "image": "",
+      "content": "Hoy vimos la practica del debug, me parece muy interesnate como la profesora tiene ya hechos sus actividades que son muy unicas ya que son programas con todo lo necesario para poder funcionar y que te arrojen los resultados al finalizar, esto sin  depender de recursos de terceros cono puede ser la platforma de google o de microsoft"
+    },
+    {
+      "id": 9,
+      "date": "05/23/2022",
+      "image": "",
+      "content": "Iniciamos la sesion viendo una video acerca de la cultura japonesa de el tranajo y de los equipos, nos explico la forma en que deberiamos exponer nuestros proyectos, espero que mi exposicon sea buena mas que nada para poder alcanzar un buen promedio de la materia para poder subir el promedio de la carrera y asi inscribirme mas facil "
+    },
+    {
+      "id": 10,
+      "date": "05/25/2022",
+      "image": "",
+      "content": "Hoy expuse mi mi proyecto de validaor de correos exlectronicos, me fue bastante bien para ser un proyecto de una sola persona, pero la profesora me hizo algunas alacaraciones en mi forma de exponer, mas que nada en dar informacion acerca de mi pero de hay en fuera todo bien "
+    },
+    {
+      "id": 11,
+      "date": "05/27/2022",
+      "image": "https://imgs.search.brave.com/ytKLCglRw1FaoZxCCQi5TTA49qs8AhSL1sghRX4_cXk/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9tYWNv/c2VyLnZ0ZXhpbWcu/Y29tLmJyL2FycXVp/dm9zL2lkcy8xNTU0/MjktMTAwMC0xMDAw/L01TLTgwQi5qcGc_/dj02MzcwMDYzODUy/NTMzMDAwMDA",
+      "content": "Me gusto mucho el diseño del proyecto de la calculadora de compiladores, ya que se be ,uy bonito y me gusto mucho la forma de implementarlo desde Java como dijo la compañera tal vez no es el mejor programa del mundo pero es muy bueno ya que es sencillo y rapido de implemetar"
+    },
+    {
+      "id": 12,
+      "date": "05/30/2022",
+      "image": "https://imgs.search.brave.com/Gc7JC23_OIXdY3Npg_vseul1wWxqLSQEMwPsaG9uW7A/rs:fit:900:650:1/g:ce/aHR0cHM6Ly8yLmJw/LmJsb2dzcG90LmNv/bS8taHhLbEZBTG9X/UW8vVnVWVFZNc2dx/Q0kvQUFBQUFBQUFB/SUUvZVhTVldOTlZ2/WHMzVWF1TWJBcjd6/TmVZN25Dc1l1cFJn/L3MxNjAwL3B5dGhv/bi1wcm9ncmFtbWlu/Zy5wbmc",
+      "content": "La verdad este dia no hubo algun proyecto que me sorprendiera mucho, fueron buenos pero todo normal la verdad no es por menospresiar el trabajo de mis comapñeros peros almenos para mi no fue la gran cosa, pero hay que darle merito ya que es un buen proyecto"
+    },
+    {
+      "id": 13,
+      "date": "06/01/2022",
+      "image": "https://imgs.search.brave.com/avA-cqqPbHn42bF85JR_94r3lPOXH8pXrC_5_CKErPk/rs:fit:800:800:1/g:ce/aHR0cHM6Ly9pNy5w/bmdndXJ1LmNvbS9w/cmV2aWV3LzcyNC8z/MDYvMzc3L2MtcHJv/Z3JhbW1pbmctbGFu/Z3VhZ2UtaWNvbi1s/ZXR0ZXItYy1wbmcu/anBn",
+      "content": "Como es costumbre emepezamos viendo algunos proyectos de los compañeros, el proyecto del repcheck  me parecio muy bueno  ya que es  un analizador de codigo y eso si tiene su grado de dificultad pero toma lo mas basico de cada lenguaje que son algunas estructuras de control como while o if   "
+    },
+    {
+      "id": 14,
+      "date": "06/03/2022",
+      "image": "https://imgs.search.brave.com/uMYW6y8WvNO3GjfNK7NiAf7KPJt8wnSMCCOeekRq1b4/rs:fit:512:512:1/g:ce/aHR0cHM6Ly9jZG4u/aWNvbi1pY29ucy5j/b20vaWNvbnMyLzEz/ODEvUE5HLzUxMi9k/b3Nib3hfOTQxMDUu/cG5n",
+      "content": "Hicimos un ejercicio con la  clssica virtual machine de dos-box, la verdad no me siento nada  preocupado ya que si e particiádo y a estas alturas del semestre puede adquirir bastante conocimiento, aun que la evaluacion no fue tan pesada si fue algo estresante realizarla "
+    },
+    {
+      "id": 15,
+      "date": "06/06/2022",
+      "image": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/1f/ea8580659311e6bd1d4b1ca9165504/verb-1.png?auto=format%2Ccompress&dpr=1",
+      "content": "Hoy la profesora nos menciono las fechas para poder entregar las actividades, me siento libre ya que e entregado todo, hoy vimos un proyecto algo interesnare que crearon algunos compañeros, el que me llamo mas la atencion fue el de conjugate verb ya que su construccioin me parece algo muy interesante ya que nunca habia abordado un proyecto como lo hicieron mis compañeros, se ve que es un proyecto robusto  "
+    }
+  ]
+}
